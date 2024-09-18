@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+         <!-- App favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/images/bigfund.png">
+        <title>Tracker</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            body{
+                background-image:url(assets/images/logistics.webp);
+                background-repeat:no-repeat;
+                background-size:cover;
+            }
+            .container{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                flex-direction:column;
+                margin:40vh;
+            }
+            h2,input[type='text']{
+                margin-bottom:10px;
+            }
+            input[type='text']{
+                width:250px;
+                padding: 12px 20px;
+                border-radius:5px;
+                height:30px;
+                
+            }
+            input[type='submit']{
+                background-color:#000000;
+                color:#fff;
+                padding:10px 15px;
+                border-radius:5px;
+                border: none;
+                cursor:pointer;
+            }
+           
+            @media screen and (max-width:550px){
+                input[type='text']{
+                border-radius:5px;
+                height:30px;
+                width:250px;
+            }
+            }
+        </style>
+        <body>
+            <form method="post" action="tracker.php">
+                <div class="container">
+                    <h2>Logistics Tracker</h2>
+                    <input type="text" name="trackid" required></input>
+                    <input type="submit" value="Track" name="track">
+                </div>
+            </form>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form with Text and Form Side by Side</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Text Section -->
+      <div class="col-md-6">
+        <h2>Exciting Career Opportunities</h2>
+        <p style="text-align: justify;">
+            Thank you for expressing interest in the career opportunities available. To proceed with your application, we kindly ask you to complete the following form on this page.
+
+            This form will help us gather important information about your skills, experiences, and career preferences, allowing us to better match you with roles that align with your qualifications.
+            
+            If you have any questions or need further assistance, feel free to reach out through our <a href="https://geexsmith.com/contact/">contact information</a>
+            
+            We appreciate your interest in joining our team and look forward to reviewing your application.
+        </p>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-md-6">
+        <h2>Sign Up</h2>
+        <form>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
